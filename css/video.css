@@ -1,0 +1,188 @@
+/* ------------ MATRICE CSS ------------ */
+
+/* DISPLAY */
+
+.fx{display:flex}
+.dnone{display: none;}
+.dinline{display: inline;}
+.dblock{display: block;}
+
+
+/* FLEXBOX */
+
+.row{flex-direction: row;}
+.rowrv{flex-direction: row-reverse;}
+.col{flex-direction: column;}
+.colrv{flex-direction: column-reverse;}
+
+.wrap{flex-wrap: wrap;}
+.wraprv{flex-wrap: wrap-reverse;}
+
+.jcstart{justify-content: flex-start;}
+.jcend{justify-content: flex-end;}
+.jccenter{justify-content: center;}
+.jcbetween{justify-content: space-between;}
+.jcaround{justify-content: space-around;}
+.jcevenly{justify-content: space-evenly;}
+
+.selfstart{align-self: flex-start;}
+.selfend{align-self: flex-end;}
+.selfauto{align-self: auto;}
+
+.aitemstart{align-items: flex-start;}
+.aitemsend{align-items: flex-end;}
+.aitemscenter{align-items: center;}
+.aitemstretch{align-items: stretch;}
+.aitemsline{align-items: baseline;}
+
+.acstart{align-content: flex-start;}
+.acend{align-content: flex-end;}
+.acenter{align-content: center;}
+.acaround{align-content:space-around;}
+.acbetween{align-content: space-between;}
+.acstretch{align-content: stretch;}
+
+
+/* TEXT/BOX-SHADOW */
+
+.blackshadow{box-shadow: 5px 10px;}
+.greyshadow{box-shadow: 5px 10px #888888;}
+.blacktext{text-shadow:5px 5px 10px black;}
+
+
+/* FILTER */
+
+.blur{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:blur(5px);}
+.bright{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:brightness(200%);}
+.contrast{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:contrast(200%);}
+.grey{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:grayscale(100%);}
+.invert{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:invert(100%);}
+.sepia{-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter:sepia(100%);}
+
+
+/* LISTE */
+
+.liste{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* POSITION */
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fixed{position: fixed;}
+.sticky{position: sticky;}
+
+
+/* VISIBILITY */
+
+.visible{visibility: visible;}
+.hidden{visibility: hidden;}
+
+
+/*  Z-INDEX */
+
+.front{z-index: 5;}
+.back{z-index: -5;}
+
+
+/* OVERFLOW  */
+
+.ofscroll{overflow: scroll;}
+.ofhidden{overflow: hidden;}
+
+
+
+/*--------------------------------*/
+/*BRAND NEW CODE*/
+
+*{border: black solid 1px;}
+
+header{
+    position: absolute;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    align-items: center;
+    background-color: white;
+}
+
+#hamburger{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+body{
+    display: flex;
+    background-image: url("../img/statue9.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+main{
+    width: 100vw;
+}
+
+#menu{
+    position: absolute;
+    width: 20vw;
+    height: 80vh;
+    left: 0px;
+    top: 0px;
+    opacity: 0.5;
+    z-index: 2;
+    padding: 5px;
+}
+
+#menu li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#slide{
+    background-color: lightgray;
+    position: absolute;
+    width: 40vw;
+    height: 80vh;
+    right: 0px;
+    top: 0px;
+    opacity: 0.5;
+    z-index: 4;
+    justify-content: center;
+    padding: 5px;
+    font-size: medium;
+}
+
+#slide p{
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+    justify-content: space-around;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
