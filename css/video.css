@@ -41,6 +41,27 @@
 
 /* WIDTH */
 
+.percent5{width: 5%;}
+.percent10{width: 10%;}
+.percent15{width: 15%;}
+.percent20{width: 20%;}
+.percent25{width: 25%;}
+.percent30{width: 30%;}
+.percent35{width: 35%;}
+.percent40{width: 40%;}
+.percent45{width: 45%;}
+.percent50{width: 50%;}
+.percent55{width: 55%;}
+.percent60{width: 60%;}
+.percent65{width: 65%;}
+.percent70{width: 70%;}
+.percent75{width: 75%;}
+.percent80{width: 80%;}
+.percent85{width: 85%;}
+.percent90{width: 90%;}
+.percent95{width: 95%;}
+.percent100{width: 100%;}
+
 .vw5{width: 5vw;}
 .vw10{width: 10vw;}
 .vw15{width: 15vw;}
@@ -64,25 +85,46 @@
 
 /* HEIGHT */
 
-.vh5{width: 5vh;}
-.vh10{width: 10vh;}
-.vh15{width: 15vh;}
-.vh20{width: 20vh;}
-.vh25{width: 25vh;}
-.vh30{width: 30vh;}
-.vh35{width: 35vh;}
-.vh40{width: 40vh;}
-.vh45{width: 45vh;}
-.vh50{width: 50vh;}
-.vh55{width: 55vh;}
-.vh60{width: 60vh;}
-.vh65{width: 65vh;}
-.vh70{width: 70vh;}
-.vh75{width: 75vh;}
-.vh80{width: 80vh;}
-.vh85{width: 85vh;}
-.vh90{width: 90vh;}
-.vh95{width: 95vh;}
+.hpercent5{height: 5%;}
+.hpercent10{height: 10%;}
+.hpercent15{height: 15%;}
+.hpercent20{height: 20%;}
+.hpercent25{height: 25%;}
+.hpercent30{height: 30%;}
+.hpercent35{height: 35%;}
+.hpercent40{height: 40%;}
+.hpercent45{height: 45%;}
+.hpercent50{height: 50%;}
+.hpercent55{height: 55%;}
+.hpercent60{height: 60%;}
+.hpercent65{height: 65%;}
+.hpercent70{height: 70%;}
+.hpercent75{height: 75%;}
+.hpercent80{height: 80%;}
+.hpercent85{height: 85%;}
+.hpercent90{height: 90%;}
+.hpercent95{height: 95%;}
+.hpercent100{height: 100%;}
+
+.vh5{height: 5vh;}
+.vh10{height: 10vh;}
+.vh15{height: 15vh;}
+.vh20{height: 20vh;}
+.vh25{height: 25vh;}
+.vh30{height: 30vh;}
+.vh35{height: 35vh;}
+.vh40{height: 40vh;}
+.vh45{height: 45vh;}
+.vh50{height: 50vh;}
+.vh55{height: 55vh;}
+.vh60{height: 60vh;}
+.vh65{height: 65vh;}
+.vh70{height: 70vh;}
+.vh75{height: 75vh;}
+.vh80{height: 80vh;}
+.vh85{height: 85vh;}
+.vh90{height: 90vh;}
+.vh95{height: 95vh;}
 .vh100{width: 100vh;}
 
 /* DISPLAY */
@@ -131,8 +173,8 @@
 /* TEXT/BOX-SHADOW */
 
 .blackshadow{box-shadow: 5px 10px;}
-.greyshadow{box-shadow: 5px 10px #888888;}
-.blacktext{text-shadow:5px 5px 10px black;}
+.greyshadow{box-shadow: 3px 3px 3px #888888;}
+.blacktext{text-shadow: 3px 3px 3px black;}
 
 
 /* FILTER */
@@ -174,12 +216,6 @@
 .hidden{visibility: hidden;}
 
 
-/*  Z-INDEX */
-
-.front{z-index: 5;}
-.back{z-index: -5;}
-
-
 /* OVERFLOW  */
 
 .ofscroll{overflow: scroll;}
@@ -188,7 +224,7 @@
 
 /* EXTREM */
 
-.top{top: Opx;}
+.top{top: 0px;}
 .bottom{bottom: 0px;}
 .left{left: 0px;}
 .right{right: 0px;}
@@ -235,7 +271,7 @@
 .b_radius3{border-radius: 3px;}
 .b_radius4{border-radius: 4px;}
 .b_radius5{border-radius: 5px;}
-.b_radius50{border-radius: 50px;}
+.b_radius50{border-radius: 100%;}
 
 
 
@@ -255,6 +291,7 @@
 .colorBlack{color: black;}
 .colorWhite{color: white;}
 .colorRed{color: red;}
+.colorBordeau{color: #9e0b0f;}
 .colorBlue{color: blue;}
 .colorGrey{color: grey;}
 .colorGreen{color: green;}
@@ -426,7 +463,7 @@ header{
 }
 
 #portrait{
-    height: 450px;
+    height: 470px;
 }
 
 #menu li{
@@ -435,7 +472,8 @@ header{
 }
 
 #slide{
-    height: 455px;
+    width: 98%;
+    top: 30px;
 }
 
 #slide li{
@@ -444,4 +482,79 @@ header{
 
 .switch{
     display: none;
+}
+
+progress{
+    height: 1%;
+}
+
+#home{
+    display: none;
+    top: px;
+}
+
+#resume{
+    top: 45px;
+    z-index: 0;
+}
+
+#video{
+    object-fit: fill;
+    top: 50px
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/desk.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 4;
+    top: 0px;
+    left: 0px;    
+    color: #9e0b0f;
+}
+
+.titre{
+    position: relative;
+    animation: anim;
+    animation-duration: 2s;
+}
+
+@keyframes anim{
+    0% {left: 500px;}
+    100% {left: 0px;}
+}
+
+.titre2{
+    position: relative;
+    animation: anim2;
+    animation-duration: 2s;
+}
+
+@keyframes anim2{
+    0% {right: 500px;}
+    100% {right: 0px;}
+}
+
+.photo{
+    position: relative;
+    animation: anim3 5s;
+    transition: ease-in;
+}
+
+@keyframes anim3{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media screen and (min-width: 425px){
+
+}
 }

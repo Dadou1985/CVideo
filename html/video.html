@@ -7,34 +7,37 @@
         <link rel="stylesheet" href="../css/video.css">
         <script src="../js/video.js" type="text/javascript"></script>
     </head>
-
     <body>
-        <header class="fx row aitemscenter">
-            <img src="../img/hamburger.png" alt="" id="hamburger" class="vw5 vh5 marginRight10">Mon Curriculum Video
+        <header class="fx row aitemscenter fontXL">
+            <img src="../img/hamburger.png" alt="" id="hamburger" class="vw10 vh5 marginRight10 colorWhite zIndex5">
+            <img src="../img/home-run.png" id="home" class="vw10 vh5 marginRight10 top left marginRight10 zIndex5" alt="">Mon Curriculum Video
         </header>
         <section class="fx row">
             <div id="portrait" class="vw100 fx row wrap">
-                <ul id="menu" class="liste zIndex1 padding1 fontSmall vw30 opacity8 left marginRight10 switch">
+                <ul id="menu" class="liste zIndex1 padding1 zIndex5 fontLarge vw30 left marginRight10 blacktext switch">
                     <li id="profil">PROFIL</li>
                     <li id="pro">PROFESSIONNEL</li>
                     <li id="academic">ACADEMIC</li>
                     <li id="hobby">HOBBIES</li>
                 </ul>
-                <ul id="slide" class="absolute zIndex2 right liste padding1 opacity6 fontLarge vw40 right relative marginLeft8 bg_azure">
-                    <li class="txtAlignCenter">titre</li>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At repellat nobis, quaerat recusandae, veniam facere cumque quos ab aspernatur, pariatur placeat autem quis eveniet consequuntur facilis labore corporis. Sunt, tempore!</li>
+                <ul id="slide" class="fx col absolute zIndex2 left opacity9 liste padding1 fontLarge hpercent85 bg_white switch">
+                    <li id="info" class="txtAlignCenter colorBordeau fontXXL bg_lightgrey blacktext">titre</li>
+                    <li id="detail" class="fontXL padding3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At repellat nobis, quaerat recusandae, veniam facere cumque quos ab aspernatur, pariatur placeat autem quis eveniet consequuntur facilis labore corporis. Sunt, tempore!</li>
                 </ul>
             </div>
-            <video class="absolute vw35 vh45 left" id="video">
-                <source src="../video/video.3gp">
+            <video class="absolute vw100 vh90 left" id="video">
+                <source src="">
             </video>
         </section>
-        <footer class="fx row bottom vw100 left absolute bg_lightgrey opacity9">
-            <img src="../img/rubix/html.png" alt="" class="vw10 vh10 margin1">
-            <img src="../img/rubix/agile.png" alt="" class="vw10 vh10 margin1">
-            <img src="../img/rubix/ajax.png" alt="" class="vw10 vh10 margin1">
-            <img src="../img/rubix/bootstrap.png" alt="" class="vw10 vh10 margin1">
-            <img src="../img/rubix/bootstrap.png" alt="" class="vw10 vh10 margin1">
+        <img src="../img/info.png" id="resume" class="vw10 vh5 absolute right margin2" alt="">
+        <div id="box">
+            <img src="../img/identity.jpg" class="photo vw55 vh40 b_radius50 zIndex2 grey" alt="" >
+            <h1 id="titre" class="titre txtAlignCenter blacktext marginBottom1 zIndex2">Je suis</h1>
+            <h1 id="titre2" class="titre2 txtAlignCenter blacktext zIndex2">Développeur Web</h1>
+            <img src="../img/rubix/html.png" id="logo" class="hpercent15 percent20" alt="">
+        </div>
+        <footer class="fx row bottom vw100 vh10 left absolute bg_white zIndex2"> 
+            <marquee behavior="scroll" direction="left" id="message" class="fx aitemscenter fontXL blacktext">Recherche un stage couvrant la période du 2 au 28 mars</marquee>
         </footer>
     </body>
 </html>
